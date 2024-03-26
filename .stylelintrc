@@ -1,6 +1,51 @@
 {
- "extends": ["stylelint-config-recommended-scss","stylelint-config-recess-order"],
- "rules": {
-    "selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$"
- }
-}
+    "extends": ["stylelint-config-standard-scss","stylelint-config-recess-order"],
+    "overrides": [
+       {
+         "files": ["**/*.scss"],
+         "customSyntax": "postcss-scss"
+       }
+     ],
+    "rules": {
+       "color-hex-length": "short",
+       "selector-attribute-quotes": "always",
+       "length-zero-no-unit": true,
+       "declaration-block-no-redundant-longhand-properties": true,
+       "declaration-block-no-shorthand-property-overrides": true,
+       "shorthand-property-no-redundant-values": true,
+       "comment-no-empty": true,
+       "rule-empty-line-before": [
+         "always",
+         {
+           "except": [
+             "after-single-line-comment",
+             "first-nested"
+           ]
+         }
+       ],
+       "no-duplicate-selectors": true,
+       "no-invalid-double-slash-comments": true,
+       "color-no-invalid-hex": true,
+       "font-family-name-quotes": "always-where-recommended",
+       "font-family-no-duplicate-names": true,
+       "font-weight-notation": "named-where-possible",
+       "function-calc-no-unspaced-operator": true,
+       "function-name-case": "lower",
+       "value-keyword-case": "lower",
+       "comment-whitespace-inside": "always",
+       "selector-type-case": "lower",
+       "at-rule-empty-line-before": [
+         "always",
+         {
+           "except": [
+             "first-nested",
+             "after-same-name"
+           ],
+           "ignore": [
+             "after-comment"
+           ]
+         }
+       ],
+       "selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$"
+    }
+   }

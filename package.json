@@ -46,6 +46,7 @@
     "sharp": "^0.31.1",
     "stylelint-config-recess-order": "^5.0.0",
     "stylelint-config-recommended-scss": "^14.0.0",
+    "stylelint-config-standard-scss": "^13.0.0",
     "stylelint-scss": "^6.2.1"
   },
   "dependencies": {
