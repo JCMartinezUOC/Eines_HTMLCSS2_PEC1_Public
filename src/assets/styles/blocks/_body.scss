@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    width: 100%;
+    margin:0;
+    font-family: $font-family-neohellenic;
+    color: $text-color;
+    background-color: #c3a343;
+    background-image: url("../images/gold.jpg?as=webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

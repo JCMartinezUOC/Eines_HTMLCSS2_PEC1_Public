@@ -1,0 +1,50 @@
+.button {
+    display: inline-block;
+    padding: 0 18px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 50px;
+    color: $button-color;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-color: $button-background;
+    border: 2px solid $button-color;
+    border-radius: 30px;
+    box-shadow: $button-color 4px 4px 0 0;
+
+    @include screen('tablet-portrait-up') {
+        min-width: 120px;
+        padding: 0 25px;
+    }
+
+    &:hover {
+        background-color: $button-background-hover;
+    }
+
+    &:active {
+        box-shadow: $button-color 2px 2px 0 0;
+        transform: translate(2px, 2px);
+    }
+
+    &--navbar {
+        margin-right: 20px;
+        text-transform: uppercase;
+        
+        @include screen('phone-only') {
+            padding: 0 7px;
+        }
+    }
+
+    &--navbar-last {
+        margin-right: 0;
+    }
+
+    &--glide {
+        min-width: 20px;
+        padding: 0 20px;
+        line-height: 20px;
+    }
+}

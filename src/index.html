@@ -1,27 +1,412 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- For responsive design (media queries) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=Gideon+Roman&family=Luxurious+Roman&display=swap"
+    rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>Roma Aeterna: La ciudad eterna</title>
+</head>
+
+<body class="body">
+  <include src="./views/header.html"></include>
+  <div class="home">
+    <div class="card">
+      <div class="card__aside">
+        <div class="glide" id="carousel-1">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <picture class="glide__picture">
+                  <source srcset="./assets/images/intro1.jpg?as=webp" type="image/webp" />
+                  <img class="glide__image" src="./assets/images/intro1.jpg" alt="Monumento a Víctor Manuel II, Roma"
+                    loading="lazy" />
+                </picture>
+              </li>
+              <li class="glide__slide">
+                <picture class="glide__picture">
+                  <source srcset="./assets/images/intro2.jpg?as=webp" type="image/webp" />
+                  <img class="glide__image" src="./assets/images/intro2.jpg" alt="Plaza Venecia, Roma" loading="lazy" />
+                </picture>
+              </li>
+              <li class="glide__slide">
+                <picture class="glide__picture">
+                  <source srcset="./assets/images/intro3.jpg?as=webp" type="image/webp" />
+                  <img class="glide__image" src="./assets/images/intro3.jpg" alt="Legionarios romanos" loading="lazy" />
+                </picture>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__buttons" data-glide-el="controls">
+            <button class="button button--glide" data-glide-dir="<"><i
+                class="button__body fas fa-arrow-left"></i></button>
+            <button class="button button--glide" data-glide-dir=">"><i
+                class="button__body fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="card__content">
+        <div class="card__header">
+          <h3 class="card__title card__title--no-subtitle">Roma: La ciudad eterna</h3>
+        </div>
+        <div class="card__body">
+          <p class="card__copy">Roma es una ciudad italiana, capital de la región del <strong>Lacio</strong> y de
+            <strong>Italia</strong>. Es el municipio
+            más poblado de Italia y la tercera ciudad más poblada de la <strong>Unión Europea</strong>. En el transcurso
+            de su historia,
+            que abarca tres milenios, llegó a extender sus dominios sobre toda la cuenca del Mediterráneo y gran parte
+            de Europa, Oriente Próximo y África del Norte. Como capital de <strong>la República y del Imperio
+              romano</strong>, llegó a
+            ser <strong>la primera gran metrópolis de la humanidad</strong>, centro de una de las civilizaciones
+            antiguas más importantes.
+          </p>
+          <p class="card__copy">Influyó en la sociedad, la cultura, la lengua, la literatura, la música, el arte,
+            la arquitectura, la filosofía, la política, la gastronomía, la religión, el derecho y la moral de los siglos
+            sucesivos. Es la ciudad con <strong>la más alta concentración de bienes históricos y arquitectónicos del
+              mundo</strong> y el corazón geográfico de la religión católica como <strong>ciudad santa del
+              catolicismo</strong>.
+            Por antonomasia, se le conoce desde la Antigüedad como la <strong>Urbe</strong> (<em>Urbs</em>). También es
+            llamada <em>"La Ciudad Eterna"</em>.</p>
+          </p>
+        </div>
+        <div class="card__footer">
+          <cite class="card__source">Fuente: Roma, página de la Wikipedia</cite>
+          <div class="card__actions">
+            <a href="https://es.wikipedia.org/wiki/Roma#" class="button" role="button">
+              <span class="button__body">Ir a la fuente</span>
+              <i class="button__append fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+    <div class="card card--yellow card--text-only">
+      <div class="card__content">
+        <div class="card__body">
+          <p class="card__copy card__copy--centered">En lo que respecta a arquitectura, nadie puede negar que la mítica
+            ciudad de Roma no disponga de...</p>
+        </div>
+      </div>
+    </div>
+    <div class="card card--reverse">
+      <div class="card__aside">
+        <div class="glide" id="carousel-2">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <picture class="glide__picture">
+                  <source srcset="./assets/images/monuments1.jpg?as=webp" type="image/webp" />
+                  <img class="glide__image" src="./assets/images/monuments1.jpg" alt="El Coliseo, Roma"
+                    loading="lazy" />
+                </picture>
+              </li>
+              <li class="glide__slide">
+                <picture class="glide__picture">
+                  <source srcset="./assets/images/monuments2.jpg?as=webp" type="image/webp" />
+                  <img class="glide__image" src="./assets/images/monuments2.jpg" alt="Fontana di Trevi, Roma"
+                    loading="lazy" />
+                </picture>
+              </li>
+              <li class="glide__slide">
+                <picture class="glide__picture">
+                  <source srcset="./assets/images/monuments3.jpg?as=webp" type="image/webp" />
+                  <img class="glide__image" src="./assets/images/monuments3.jpg" alt="Arco de Septimio Severo, Roma"
+                    loading="lazy" />
+                </picture>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__buttons" data-glide-el="controls">
+            <button class="button button--glide" data-glide-dir="<"><i
+                class="button__body fas fa-arrow-left"></i></button>
+            <button class="button button--glide" data-glide-dir=">"><i
+                class="button__body fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="card__content">
+        <div class="card__header">
+          <h3 class="card__title card__title--no-subtitle">Un patrimonio arquitectónico sin igual</h3>
+        </div>
+        <div class="card__body">
+          <p class="card__copy">En Roma hay varios centenares de iglesias cristianas y su historia se entrelaza con la
+            historia religiosa, social y artística de la ciudad. La catedral es la <strong>basílica de San Giovanni in
+              Laterano</strong>,
+            una de las cuatro basílicas patriarcales o papales junto con la <strong>basílica de San Pedro en la Ciudad
+              del
+              Vaticano</strong>, la <strong>Basílica de San Pablo Extramuros</strong> y la <strong>Basílica de Santa
+              María la Mayor</strong>.</p>
+          <p class="card__copy">En el transcurrir de su historia plurisecular, Roma fue sede de centenares de teatros y
+            otros edificios dedicados al entretenimiento, como los circos (el circo más célebre fue el <strong>Circo
+              Massimo</strong>,
+            capaz de albergar alrededor de 250 000 espectadores, récord aún hoy no superado) y los anfiteatros (el mayor
+            de los cuales, el <strong>Coliseo</strong>, se ha convertido en símbolo de la ciudad y emblema cultural
+            mundial). Roma,
+            además, es abundante en <strong>fuentes y acueductos</strong>. El centro de la ciudad también está
+            caracterizado por algunos
+            arcos triunfales antiguos (el <strong>arco de Tito</strong>, el <strong>arco de Septimio Severo</strong>, el
+            <strong>arco de Constantino</strong>) y los restos
+            de varias termas, uno de los principales lugares de reunión durante la Antigüedad.
+          </p>
+        </div>
+        <div class="card__footer card__footer--reverse">
+          <cite class="card__source">Fuente: Roma - Patrimonio, página de la Wikipedia</cite>
+          <div class="card__actions">
+            <a href="https://es.wikipedia.org/wiki/Roma#Patrimonio" class="button" role="button">
+              <span class="button__body">Ir a la fuente</span>
+              <i class="button__append fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card card--yellow card--text-only">
+      <div class="card__content">
+        <div class="card__body">
+          <p class="card__copy card__copy--centered">Roma es además el corazón del mundo católico, ya que es el...</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__aside">
+        <div class="glide" id="carousel-3">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <picture class="glide__picture">
+                  <source srcset="./assets/images/vatican1.jpg?as=webp" type="image/webp" />
+                  <img class="glide__image" src="./assets/images/vatican1.jpg"
+                    alt="Plaza de San Pedro, Ciudad del Vaticano" loading="lazy" />
+                </picture>
+              </li>
+              <li class="glide__slide">
+                <picture class="glide__picture">
+                  <source srcset="./assets/images/vatican2.jpg?as=webp" type="image/webp" />
+                  <img class="glide__image" src="./assets/images/vatican2.jpg"
+                    alt="Estatua de San Pedro, Ciudad del Vaticano" loading="lazy" />
+                </picture>
+              </li>
+              <li class="glide__slide">
+                <picture class="glide__picture">
+                  <source srcset="./assets/images/vatican3.jpg?as=webp" type="image/webp" />
+                  <img class="glide__image" src="./assets/images/vatican3.jpg"
+                    alt="La escuela de Atenas, Ciudad del Vaticano" loading="lazy" />
+                </picture>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__buttons" data-glide-el="controls">
+            <button class="button button--glide" data-glide-dir="<"><i
+                class="button__body fas fa-arrow-left"></i></button>
+            <button class="button button--glide" data-glide-dir=">"><i
+                class="button__body fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="card__content">
+        <div class="card__header">
+          <h3 class="card__title card__title--no-subtitle">Hogar de La Ciudad del Vaticano</h3>
+        </div>
+        <div class="card__body">
+          <p class="card__copy">La <strong>Ciudad del Vaticano</strong> alberga la <strong>Santa Sede</strong>, máxima
+            institución de la <strong>Iglesia católica</strong>.
+            Aunque los dos nombres, <strong>«Ciudad del Vaticano»</strong> y <strong>«Santa Sede»</strong>, se utilizan
+            a menudo como si fueran
+            equivalentes, el primero se refiere a la ciudad y a su territorio, mientras que el segundo se refiere a la
+            institución que dirige la <strong>Iglesia</strong> y que tiene personalidad jurídica propia como sujeto de
+            derecho
+            internacional. En rigor, es la <strong>Santa Sede</strong> y no el <strong>Estado del Vaticano</strong> la
+            que mantiene relaciones
+            diplomáticas con los demás países del mundo. Por otro lado, el <strong>Vaticano</strong> es quien da el
+            soporte temporal y
+            soberano (sustrato territorial) para la actividad de la <strong>Santa Sede</strong>.</p>
+          <p class="card__copy">La máxima autoridad y jefe de Estado de la Ciudad del Vaticano es <strong>el papa de la
+              Iglesia
+              católica</strong>, por lo que puede considerarse <strong>la única teocracia y la última monarquía absoluta
+              de Europa</strong>. El sumo
+            pontífice delega las funciones de gobierno en el secretario de Estado. El conjunto arquitectónico e
+            histórico-artístico que conforma la Ciudad del Vaticano fue declarado
+            <strong>Patrimonio de la Humanidad por la Unesco en 1984</strong>, siendo el único caso en que se extiende a
+            un Estado
+            (país) completo.
+          </p>
+        </div>
+        <div class="card__footer">
+          <cite class="card__source">Fuente: Ciudad del Vaticano, página de la Wikipedia</cite>
+          <div class="card__actions">
+            <a href="https://es.wikipedia.org/wiki/Ciudad_del_Vaticano" class="button" role="button">
+              <span class="button__body">Ir a la fuente</span>
+              <i class="button__append fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card card--yellow card--text-only">
+      <div class="card__content">
+        <div class="card__body">
+          <p class="card__copy card__copy--centered">Y por si fuera poco, muchos arqueólogos han llamado a Roma...</p>
+        </div>
+      </div>
+    </div>
+    <div class="card card--reverse">
+      <div class="card__aside">
+        <div class="glide" id="carousel-4">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <picture class="glide__picture">
+                  <source srcset="./assets/images/museum1.jpg?as=webp" type="image/webp" />
+                  <img class="glide__image" src="./assets/images/museum1.jpg" alt="Interior del Coliseo, Roma"
+                    loading="lazy" />
+                </picture>
+              </li>
+              <li class="glide__slide">
+                <picture class="glide__picture">
+                  <source srcset="./assets/images/museum2.jpg?as=webp" type="image/webp" />
+                  <img class="glide__image" src="./assets/images/museum2.jpg" alt="El foro romano, Roma"
+                    loading="lazy" />
+                </picture>
+              </li>
+              <li class="glide__slide">
+                <picture class="glide__picture">
+                  <source srcset="./assets/images/museum3.jpg?as=webp" type="image/webp" />
+                  <img class="glide__image" src="./assets/images/museum3.jpg"
+                    alt="El Jardín del Lago y el Templo de Esculapio en Villa Borghese, Roma" loading="lazy" />
+                </picture>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__buttons" data-glide-el="controls">
+            <button class="button button--glide" data-glide-dir="<"><i
+                class="button__body fas fa-arrow-left"></i></button>
+            <button class="button button--glide" data-glide-dir=">"><i
+                class="button__body fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="card__content">
+        <div class="card__header">
+          <h3 class="card__title card__title--no-subtitle">Un museo al aire libre</h3>
+        </div>
+        <div class="card__body">
+          <p class="card__copy">Por su abundancia de sitios y restos arqueológicos, Roma es un verdadero <em>«museo al
+              aire
+              libre»</em>. La cuna de la historia de Roma es el <strong>Palatino</strong>, debajo del cual se encuentran
+            el <strong>Foro Romano</strong>, los
+            <strong>Foros imperiales</strong> y el <strong>Mercado de Trajano</strong>, los centros de la vida política,
+            económica, religiosa y social del
+            mundo antiguo. A poca distancia se encuentra el <strong>Coliseo</strong>, el monumento que sirve de símbolo
+            a la Antigua
+            Roma; sobre la cercana colina Oppio se encuentran los restos de la <strong>Domus Aurea</strong>, la
+            <em>«casa de oro»</em> de
+            Nerón. Caminando de la Piazza Venezia hacia el río Tíber se encuentran la <strong>Cripta Balbi</strong>
+            (parte del
+            antiguo <strong>teatro de Balbo</strong>), el <strong>Teatro de Marcelo</strong> con los templos del área de
+            Sant'Omobono y el área sagrada de
+            <strong>Largo di Torre Argentina</strong> (donde asesinaron a César).
+          </p>
+          <p class="card__copy">Otros sitios arqueológicos presentes en la ciudad son la <strong>basílica subterránea de
+              Porta
+              Maggiore</strong>, las termas de Caracalla, los restos de <strong>San Clemente</strong>, el
+            <strong>auditorio de Mecenas</strong> y las casas
+            romanas del Celio, debajo de la <strong>basílica de San Juan y San Pablo</strong>. Fuera del centro urbano
+            se encuentran las
+            excavaciones de <strong>Ostia</strong>; el mausoleo de <strong>Cecilia Metela</strong>, el <strong>Castrum
+              Caetani</strong>, la <strong>Tumba de los Escipiones</strong> y
+            la <strong>villa de los Quintili</strong> sobre la <strong>vía Appia Antica</strong>; la <strong>villa de
+              Livia en Prima Porta</strong>; el área
+            arqueológica de <strong>Veyes</strong>, con el <strong>santuario etrusco del Apolo</strong> y el
+            <strong>Parque de las Tumbas de la Via Latina</strong>.
+          </p>
+        </div>
+        <div class="card__footer card__footer--reverse">
+          <cite class="card__source">Fuente: Roma - Sitios arqueológicos, página de la Wikipedia</cite>
+          <div class="card__actions">
+            <a href="https://es.wikipedia.org/wiki/Roma#Sitios_arqueológicos" class="button" role="button">
+              <span class="button__body">Ir a la fuente</span>
+              <i class="button__append fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card card--yellow card--text-only">
+      <div class="card__content">
+        <div class="card__body">
+          <p class="card__copy card__copy--centered">Para acabar, si decidimos visitar la ciudad, no podemos olvidarnos
+            de probar la...</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__aside">
+        <div class="glide" id="carousel-5">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <picture class="glide__picture">
+                  <source srcset="./assets/images/food1.jpg?as=webp" type="image/webp" />
+                  <img class="glide__image" src="./assets/images/food1.jpg"
+                    alt="Spaghetti alla Carbonara, un plato típico romano" loading="lazy" />
+                </picture>
+              </li>
+              <li class="glide__slide">
+                <picture class="glide__picture">
+                  <source srcset="./assets/images/food2.jpg?as=webp" type="image/webp" />
+                  <img class="glide__image" src="./assets/images/food2.jpg"
+                    alt="Pizza al taglio en el barrio de Trastévere" loading="lazy" />
+                </picture>
+              </li>
+            </ul>
+          </div>
+          <div class="glide__buttons" data-glide-el="controls">
+            <button class="button button--glide" data-glide-dir="<"><i
+                class="button__body fas fa-arrow-left"></i></button>
+            <button class="button button--glide" data-glide-dir=">"><i
+                class="button__body fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="card__content">
+        <div class="card__header">
+          <h3 class="card__title card__title--no-subtitle">Gastronomía romana</h3>
+        </div>
+        <div class="card__body">
+          <p class="card__copy">Hoy en día, la ciudad alberga numerosos platos italianos formidables y tradicionales. Se
+            puede ver una influencia judía, ya que los judíos han vivido en Roma desde el siglo I a. Las verduras,
+            especialmente las <strong>alcachofas</strong>, son comunes. Ejemplos de estos incluyen <strong>"Saltimbocca
+              alla Romana"</strong>, una chuleta
+            de ternera al estilo romano; cubierto con jamón crudo y salvia y cocido a fuego lento con vino blanco y
+            mantequilla; <strong>"Carciofi alla giudia"</strong> - alcachofas fritas en aceite de oliva, típicas de la
+            cocina judía
+            romana; <strong>"Carciofi alla romana"</strong> - alcachofas a la romana; sin hojas exteriores, relleno de
+            menta, ajo, pan
+            rallado y estofado; <strong>"Spaghetti alla carbonara"</strong>: espaguetis con tocino, huevos y pecorino, y
+            <strong>"Gnocchi di
+              semolino alla romana"</strong>: bola de masa de sémola al estilo romano, por nombrar solo algunos.</p>
+        </div>
+        <div class="card__footer">
+          <cite class="card__source">Fuente: Roma - Gastronomía de Roma, página de la Wikipedia</cite>
+          <div class="card__actions">
+            <a href="https://es.wikipedia.org/wiki/Roma#Gastronomía_de_Roma" class="button" role="button">
+              <span class="button__body">Ir a la fuente</span>
+              <i class="button__append fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
 </html>

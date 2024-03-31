@@ -1,0 +1,125 @@
+.card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    padding: 20px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+    background: $card-background;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px 5px rgb(0 0 0 / 25%);
+
+    @include screen('phone-only') {
+        flex-direction: column;
+        width: 100%;
+    }
+    @include screen('tablet-portrait-up') {
+        width: 95%;
+    }
+    @include screen('tablet-landscape-up') {
+        width: 90%;
+    }
+    @include screen('desktop-up') {
+        width: 80%;
+    }
+    @include screen('extra-up') {
+        width: 70%;
+    }
+
+    &--yellow {
+        background-color: $card-background-yellow;
+    }
+
+    &--text-only {
+        align-items: center;
+        justify-content: center;
+    }
+
+    &--reverse {
+        flex-direction: row-reverse;
+
+        @include screen('phone-only') {
+            flex-direction: column;
+        }
+    }
+
+    &__aside {
+        display: inline-block;
+        margin-right: 20px;
+
+        @include screen('phone-only') {
+            margin-right: 0;
+        }
+    }
+
+    &__content {
+        display: inline-flex;
+        flex-direction: column;
+        font-size: 1.2rem;
+
+        @include screen('phone-only') {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__header {
+        @include screen('phone-only') {
+            text-align: center;
+        }
+        
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        font-size: 1.9rem;
+
+        @include screen('phone-only') {
+            font-size: 2.1rem;
+        }
+
+        &--no-subtitle {
+            margin-bottom: 0;
+        }
+        
+    }
+
+    &__subtitle {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-style: italic;
+        
+    }
+
+    &__body {
+        margin-top: 0;
+        line-height: 1.5;
+    }
+
+    &__copy {
+        &--centered {
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+
+    &__footer {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        &--reverse {
+            align-items: flex-start;
+        }
+    }
+
+    &__source {
+        margin-top: 1em;
+        margin-right: 10px;
+        margin-bottom: 1em;
+        font-style: italic;
+        color: $text-source-color;
+    }
+
+}

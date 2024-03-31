@@ -1,0 +1,13 @@
+.footer {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: $web-title-color;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+
+    &__paragraph {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+}

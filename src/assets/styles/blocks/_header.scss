@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+
+    &__title {
+        margin-bottom: 0;
+        font-size: 4rem;
+        color: $web-title-color;
+        text-shadow: 5px 5px 5px black;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        @include screen('phone-only') {
+            margin-top:10px;
+        }
+    }
+
+    &__subtitle {
+        font-family: $font-family-cursive-roman;
+        font-style: italic;
+        font-weight: bold;
+        color: $web-subtitle-color;
+        text-decoration-line: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-style: wavy; 
+        text-underline-offset: 7px;
+        letter-spacing: 2px;
+    }
+}
