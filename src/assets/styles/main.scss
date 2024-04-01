@@ -19,6 +19,9 @@
 
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+@import "npm:@glidejs/glide/src/assets/sass/glide.core";
+@import "npm:@glidejs/glide/src/assets/sass/glide.theme";
 
 /**
  * Import layouts & blocks
