@@ -49,6 +49,15 @@
         display: inline-block;
         margin-right: 20px;
 
+        &--reverse {
+            margin-right: 0;
+            margin-left: 20px;
+
+            @include screen('phone-only') {
+                margin-left: 0;
+            }
+        }
+
         @include screen('phone-only') {
             margin-right: 0;
         }
